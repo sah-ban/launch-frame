@@ -91,8 +91,8 @@ if (ctx.url) {
   const SplashScreen = () => (
     <div tw="flex flex-col w-full h-full bg-[#20142c] text-[#f5deb3] font-sans font-bold items-center justify-center">
 <div tw="text-6xl">Launch a V2 frame from V1 frame</div>
-<div tw="text-4xl">(add your frame domain in the query parameter)</div>
-<div>( eg: launch-frame.vercel.app?d=around-joined.vercel.app )</div>
+<div tw="text-4xl mt-5">(add your frame domain in the query parameter)</div>
+<div tw="text-4xl mt-5">( eg: launch-frame.vercel.app?d=around-joined.vercel.app )</div>
 
 
 </div>
