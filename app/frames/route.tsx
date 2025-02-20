@@ -89,10 +89,17 @@ if (ctx.url) {
   //   await Promise.all([fetchUserData(fid)]);
   // }
   const SplashScreen = () => (
-    <div tw="flex flex-col w-full h-full bg-[#20142c] text-[#f5deb3] font-sans font-bold items-center justify-center">
-<div tw="text-6xl">Launch a V2 frame from V1 frame</div>
-<div tw="text-4xl mt-5">(add your frame domain in the query parameter)</div>
-<div tw="text-4xl mt-5">( eg: launch-frame.vercel.app?d=around-joined.vercel.app )</div>
+    <div tw="flex flex-col w-full h-full bg-[#20142c] text-[#f5deb3] font-sans font-bold ">
+<div tw="text-6xl items-center justify-center mt-25">Launch a V2 frame from V1 frame</div>
+
+<div tw="text-4xl mt-5 ml-80">1. click on edit</div>
+<div tw="text-4xl mt-5 ml-80">2. write your frame domain</div>
+<div tw="text-4xl mt-5 ml-80">3. click copy</div>
+<div tw="text-4xl mt-5 ml-80">4. send in DC</div>
+
+
+
+<div tw="text-4xl mt-5 items-center justify-center">( eg: launch-frame.vercel.app?d=around-joined.vercel.app )</div>
 
 
 </div>
@@ -119,7 +126,16 @@ if (ctx.url) {
 
   if (!domain) {
     buttons.push(
-
+      <Button
+        action="link"
+        target="https://launch-frame.vercel.app/"     >
+       Edit
+      </Button>,
+            <Button
+            action="link"
+            target="https://warpcast.com/~/frames/launch?domain=around-joined.vercel.app"     >
+         Demo
+          </Button>,
       <Button
         action="link"
         target="https://warpcast.com/cashlessman.eth"     >
