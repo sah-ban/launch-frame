@@ -69,7 +69,7 @@ export default function Page() {
             document.getElementById("copy-button").addEventListener("click", function() {
               const input = document.getElementById("url");
               if (input) {
-                const textToCopy = "https://launch-frame.vercel.app/?t=" + input.value;
+                const textToCopy = "https://launch-frame.vercel.app/?d=" + input.value;
                 navigator.clipboard.writeText(textToCopy)
                   .then(() => alert("Text copied to clipboard!"))
                   .catch(() => alert("Failed to copy text."));
